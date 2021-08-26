@@ -1,0 +1,44 @@
+<회의 기록 : 2021-08-25>
+     - 조원들이 모여 토론을하고 요구사항 관리 대장을 작성
+     - 프로젝트에 대한 구상을 하고 ERD 모델 작성
+     - 작성한 ERD모델을 토대로 Database 설계
+     - Database 상품 테이블에 실제로 넣을 데이터 자료수집
+     - Database 작성한 테이블을 토대로 eclipse에 vo클래스 작성
+     
+
+<과업>
+     - 다음 미팅전까지 로그인 기능, 회원가입 설계 , 탈퇴 기능 , 포인트 조회 까지 구현
+     - 구매 조회 ,상품 등록, 상품 조회, 상품 구매 , 장바구니 등록 구현
+     - 다음 미팅은 8/31 화요일 예정
+	
+
+<해야 할 일>
+     - MemberDAO
+        1. 회원정보 등록(INSERT)
+        2. 회원정보 조회(SELECT)
+        3. 회원정보 수정(UPDATE)
+        4. 회원탈퇴      (DELETE)
+        5. 포인트 조회  (SELECT)
+     -  ProductDAO
+        1. 상품 조회(상품명) (SELECT)
+        2. 상품 조회(성 별)   (SELECT)
+        3. 상품 조회(가격별) (SELECT)
+        4. 상품 수정           (UPDATE)
+        5. 상품 삭제(재고 0개 일경우) (DELETE)
+     -  ReviewsDAO
+        1. 상품평 등록  (SELECT)
+        2. 상품평 수정  (UPDATE)
+        3. 상품평 삭제  (DELETE)
+     -  BuyDAO	
+        1. 상품 구매 정보 (INSERT)
+        2. 구매 시(point 차감 여부) 돈이 모자를 경우 추가돈 요구 , 많이 줄 경우 반환 
+ 	돈이 다 입금되면 ProductDAO 에 상품 수정 STOCK-1 실행  
+	후에  MANAGER 에게 돈 입금처리
+	 
+        2. 장바구니 등록 ( INSERT)
+        3. 장바구니 수정 (UPDATE)
+        4. 장바구니 삭제(DELETE)
+     - ManagerDAO
+        1. 관리자 추가 (INSERT)
+        2. 입금된 돈 확인 (SELECT) 
+   
